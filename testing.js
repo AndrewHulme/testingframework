@@ -1,11 +1,11 @@
 "use strict";
 
-function expect(a){
+function expect(actual){
 
   return {
-    toEqual: function(b){
+    toEqual: function(expected){
 
-      if(a === b){
+      if(actual === expected){
         console.log("Pass")
       } else {
         console.log("Fail")
@@ -15,7 +15,7 @@ function expect(a){
 
     toBeAnArray: function(){
 
-      if(a.constructor.name === "Array"){
+      if(actual.constructor.name === "Array"){
         console.log("Pass")
       } else {
         console.log("Fail")
