@@ -12,6 +12,7 @@ Usage?
 User(programmer)
 
 1)
+```
 Input:
 describe('toEqual', function() {
   it('2 + 2 is equal to 4', function(){
@@ -23,9 +24,10 @@ Output:
 //- toEqual -
 Test: 2 + 2 is equal to 4
 Pass
-
+```
 
 2)
+```
 Input:
 describe('toEqual', function() {
   it('2 + 3 is equal to 4', function(){
@@ -37,3 +39,4 @@ Output:
 //- toEqual -
 Test: 2 + 3 is equal to 4
 Fail
+```
