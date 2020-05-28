@@ -1,7 +1,28 @@
 "use strict";
 
-function expect(){
-  
+function expect(a){
+
+  return {
+    toEqual: function(b){
+
+      if(a === b){
+        console.log("Pass")
+      } else {
+        console.log("Fail")
+      }
+
+    },
+
+    toBeAnArray: function(){
+
+      if(a.constructor.name === "Array"){
+        console.log("Pass")
+      } else {
+        console.log("Fail")
+      }
+
+    }
+  }
 }
 
 function it(label, callback){
@@ -15,3 +36,7 @@ function it(label, callback){
 it('2 + 2 is equal to 4', function(){ expect(2+2).toEqual(4) })
 
 it('2 + 3 is equal to 4', function(){ expect(2+3).toEqual(4) })
+
+it('[] to be an array', function(){ expect([]).toBeAnArray() })
+
+it('"Andrew" to not be an array', function(){ expect("Andrew").toBeAnArray() })
