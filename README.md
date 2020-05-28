@@ -24,10 +24,10 @@ Pass
 
 2)
 Input:
-it('2 + 2 is equal to 5', function(){
-  expect(2+2).toEqual(5)
+it('2 + 3 is equal to 4', function(){
+  expect(2+3).toEqual(4)
 })
 
 Output:
-Test: 2 + 2 is equal to 5
+Test: 2 + 3 is equal to 4
 Fail
